@@ -1,0 +1,24 @@
+[
+    {
+      "id": 101,
+      "title": "Rock Anthem",
+      "composer": "John Doe",
+      "lyricist": "Jane Smith",
+      "yearCreated": 2005
+    },
+    {
+      "id": 102,
+      "title": "Ballad of Freedom",
+      "composer": "John Doe",
+      "lyricist": "Mike Johnson",
+      "yearCreated": 2006
+    },
+    {
+      "id": 103,
+      "title": "Pop Hit",
+      "composer": "Alice Cooper",
+      "lyricist": "Bob Marley",
+      "yearCreated": 2011
+    }
+  ]
+  

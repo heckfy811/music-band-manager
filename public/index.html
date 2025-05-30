@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Менеджер музыкальных групп</title>
+  <!-- Подключение Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Менеджер музыкальных групп</h1>
+    </header>
+    
+    <nav>
+      <button class="nav-btn" onclick="loadGroups()">Группы</button>
+      <button class="nav-btn" onclick="loadSongs()">Песни</button>
+      <button class="nav-btn" onclick="loadTours()">Гастроли</button>
+    </nav>
+    
+    <main>
+      <section class="general-section">
+        <h2>Общие списки</h2>
+        <div id="generalResults" class="results"></div>
+      </section>
+      
+      <section class="queries-section">
+        <h2>Запросы</h2>
+        
+        <div class="query">
+          <h3>1. Песни на гастролях заданной группы</h3>
+          <input type="text" id="groupName1" placeholder="Название группы">
+          <button class="action-btn" onclick="querySongsOnTour()">Выполнить запрос</button>
+          <div id="resultSongsOnTour" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>2. Группы, исполняющие песни заданного композитора</h3>
+          <input type="text" id="composerQuery" placeholder="Имя композитора">
+          <button class="action-btn" onclick="queryGroupsByComposer()">Выполнить запрос</button>
+          <div id="resultGroupsByComposer" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>3. Детали песни по названию</h3>
+          <input type="text" id="songTitleQuery" placeholder="Название песни">
+          <button class="action-btn" onclick="querySongDetails()">Выполнить запрос</button>
+          <div id="resultSongDetails" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>4. Репертуар наиболее популярной группы</h3>
+          <button class="action-btn" onclick="queryPopularRepertoire()">Выполнить запрос</button>
+          <div id="resultPopularRepertoire" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>5. Тур: место и продолжительность гастролей группы</h3>
+          <input type="text" id="groupName2" placeholder="Название группы">
+          <button class="action-btn" onclick="queryTourInfo()">Выполнить запрос</button>
+          <div id="resultTourInfo" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>6. Песни заданного певца</h3>
+          <input type="text" id="singerQuery" placeholder="Имя певца">
+          <button class="action-btn" onclick="querySongsBySinger()">Выполнить запрос</button>
+          <div id="resultSongsBySinger" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>7. Добавление песни в репертуар группы</h3>
+          <div class="flex-inputs">
+            <input type="number" id="groupIdAdd" placeholder="ID группы">
+            <input type="number" id="songIdAdd" placeholder="ID песни">
+          </div>
+          <input type="text" id="songTitleAdd" placeholder="Название песни">
+          <div class="flex-inputs">
+            <input type="text" id="composerAdd" placeholder="Композитор">
+            <input type="text" id="lyricistAdd" placeholder="Автор текста">
+          </div>
+          <input type="number" id="yearCreatedAdd" placeholder="Год создания">
+          <button class="action-btn" onclick="addSongToGroup()">Добавить песню</button>
+          <div id="resultAddSong" class="results"></div>
+        </div>
+        
+        <div class="query">
+          <h3>8. Удаление песни из репертуара группы</h3>
+          <div class="flex-inputs">
+            <input type="number" id="groupIdDelete" placeholder="ID группы">
+            <input type="number" id="songIdDelete" placeholder="ID песни">
+          </div>
+          <button class="action-btn" onclick="deleteSongFromGroup()">Удалить песню</button>
+          <div id="resultDeleteSong" class="results"></div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2025 Менеджер музыкальных групп</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

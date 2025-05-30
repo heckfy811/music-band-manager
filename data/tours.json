@@ -1,0 +1,21 @@
+[
+    {
+      "id": 201,
+      "groupId": 1,
+      "tourName": "Viperr World Tour",
+      "cities": ["Москва", "Казань"],
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-10",
+      "averageTicketPrice": 200
+    },
+    {
+      "id": 202,
+      "groupId": 2,
+      "tourName": "Dead Dynasty Tour",
+      "cities": ["Санкт-Петербург", "Нижний Новгород"],
+      "startDate": "2025-05-05",
+      "endDate": "2025-05-15",
+      "averageTicketPrice": 150
+    }
+  ]
+  

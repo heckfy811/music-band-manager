@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Viperr",
+      "city": "Москва",
+      "yearCreated": 2022,
+      "country": "Россия",
+      "performers": ["Kai Angel", "9mice"],
+      "rating": 1,
+      "repertoire": [101, 102]
+    },
+    {
+      "id": 2,
+      "name": "Dead Dynasty",
+      "city": "Санкт-Петербург",
+      "yearCreated": 2015,
+      "country": "Россия",
+      "performers": ["Pharaoh", "Mnogoznaal"],
+      "rating": 2,
+      "repertoire": [103]
+    }
+  ]
+  

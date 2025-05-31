@@ -6,7 +6,7 @@ function loadGroups() {
         const div = document.getElementById('generalResults');
         let html = '<h3>Группы</h3><ul>';
         data.forEach(group => {
-          html += `<li>ID: ${group.id}, Название: ${group.name}, Город: ${group.city}, Год: ${group.yearCreated}, Страна: ${group.country}, Рейтинг: ${group.rating}</li>`;
+          html += `<li>Название: ${group.name}, Город: ${group.city}, Год: ${group.yearCreated}, Страна: ${group.country}, Рейтинг: ${group.rating}</li>`;
         });
         html += '</ul>';
         div.innerHTML = html;
@@ -20,7 +20,7 @@ function loadGroups() {
         const div = document.getElementById('generalResults');
         let html = '<h3>Песни</h3><ul>';
         data.forEach(song => {
-          html += `<li>ID: ${song.id}, Название: ${song.title}, Композитор: ${song.composer}, Автор: ${song.lyricist}, Год: ${song.yearCreated}</li>`;
+          html += `<li>Название: ${song.title}, Композитор: ${song.composer}, Автор: ${song.lyricist}, Год: ${song.yearCreated}</li>`;
         });
         html += '</ul>';
         div.innerHTML = html;
@@ -34,7 +34,7 @@ function loadGroups() {
         const div = document.getElementById('generalResults');
         let html = '<h3>Гастроли</h3><ul>';
         data.forEach(tour => {
-          html += `<li>ID: ${tour.id}, Группа: ${tour.groupId}, Название тура: ${tour.tourName}, Города: ${tour.cities.join(', ')}, Даты: ${tour.startDate} - ${tour.endDate}, Средняя цена: ${tour.averageTicketPrice}</li>`;
+          html += `<li>Группа: ${tour.groupId}, Название тура: ${tour.tourName}, Города: ${tour.cities.join(', ')}, Даты: ${tour.startDate} - ${tour.endDate}, Средняя цена: ${tour.averageTicketPrice}</li>`;
         });
         html += '</ul>';
         div.innerHTML = html;
@@ -52,7 +52,7 @@ function loadGroups() {
           html = `<p>${data.error}</p>`;
         } else {
           data.forEach(song => {
-            html += `<li>ID: ${song.id}, Название: ${song.title}, Композитор: ${song.composer}</li>`;
+            html += `<li>Название: ${song.title}, Композитор: ${song.composer}</li>`;
           });
           html += '</ul>';
         }
@@ -71,7 +71,7 @@ function loadGroups() {
           html = `<p>${data.error}</p>`;
         } else {
           data.forEach(group => {
-            html += `<li>ID: ${group.id}, Название: ${group.name}</li>`;
+            html += `<li>Название: ${group.name}</li>`;
           });
           html += '</ul>';
         }
@@ -108,7 +108,7 @@ function loadGroups() {
           html += `<p>Наиболее популярная группа: ${data.group}</p>`;
           html += '<ul>';
           data.repertoire.forEach(song => {
-            html += `<li>ID: ${song.id}, Название: ${song.title}</li>`;
+            html += `<li>Название: ${song.title}</li>`;
           });
           html += '</ul>';
         }
@@ -145,7 +145,7 @@ function loadGroups() {
           html = `<p>${data.error}</p>`;
         } else {
           data.forEach(song => {
-            html += `<li>ID: ${song.id}, Название: ${song.title}</li>`;
+            html += `<li>Название: ${song.title}</li>`;
           });
           html += '</ul>';
         }
